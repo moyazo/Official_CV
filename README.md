@@ -6,9 +6,9 @@ Welcome to my <strong>CV GitHub repository</strong>, where you can explore my pr
 
 <h2>What You'll Find</h2>
   <ul>
-    <li>strong>Experience</strong></li>
+    <li><strong>Experience</strong></li>
     <li><strong>Projects</strong></li>
-    <li>strong>Skills</strong></li>
+    <li><strong>Skills</strong></li>
   </ul>
   
 Happy coding! :D
