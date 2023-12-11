@@ -1,0 +1,22 @@
+/* FIRST MOBILE */
+:root{
+    --white:#fff; 
+    --maxdimensions: 100%;
+    --autoDimension: auto;
+}
+/* General styles */
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    background-color: var(--white);
+    width: var(--maxdimensions);
+    height: var(--autoDimension);
+}
+
+header#header {
+    width: var(--maxdimensions);
+    
+}
