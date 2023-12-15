@@ -83,6 +83,45 @@ main#mainContainer {
 /* SECTION - BRAND */
 .brand{
     background-color: #FF9F1C;
+    width: var(--maxdimensions);
+    height: 10rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.brandTxtContainer{
+    width: var(--maxdimensions);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+}
+.brandTitle, .brandTxt {
+    width: 75%;
+}
+.brandBtns {
+    margin: 0;
+    padding: 0;
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn1, .btn2 {
+    color: white;
+    border: 0;
+    background-color: transparent;
+    transition: .5s ease-in;
+    margin: 0;
+    padding: 0;
+}
+.btn1:hover, .btn2:hover {
+    transform: scale(1.2);
+}
+.yoSinBg{
+    width: 100px;
 }
 /* SECTION - ABOUT ME */
 section.aboutMeContainer{
