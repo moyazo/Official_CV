@@ -24,7 +24,7 @@ star1.addEventListener("click", () => {
             setTimeout(() => {
                 aboutMeTxtHeader.classList.add("h3AnimationExtend");
                 aboutMeTxtHeader.classList.remove("h3AnimationCollapse");
-                aboutMeTxtHeader.style.width = "10%";
+                aboutMeTxtHeader.style.width = "30%";
                 aboutMeTxtHeader.style.opacity = "100";
                 star2.style.opacity = "100";
                 star2.classList.add("defuseStars");
@@ -58,7 +58,7 @@ star2.addEventListener("click", () => {
         setTimeout(() => {
             aboutMeTxtHeader.classList.add("h3AnimationExtend");
             aboutMeTxtHeader.classList.remove("h3AnimationCollapse");
-            aboutMeTxtHeader.style.width = "10%";
+            aboutMeTxtHeader.style.width = "30%";
             aboutMeTxtHeader.style.opacity = "100";
             star2.style.opacity = "100"; 
             star1.classList.remove("mixStarsAnimation");
