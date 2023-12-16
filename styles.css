@@ -1,84 +1,77 @@
 @font-face {
-  font-family: "learner";
-  src: url("./assets/Letters\ for\ Learners.ttf");
+    font-family: "learner";
+    src: url("./assets/Letters\ for\ Learners.ttf");
 }
 * {
-  font-family: "learner";
+    font-family: "learner";
 }
 /* FIRST MOBILE */
 :root {
-  --white: #fff;
-  --maxdimensions: 100%;
-  --autoDimension: auto;
+    --white: #fff;
+    --maxdimensions: 100%;
+    --autoDimension: auto;
 }
 /* General styles */
 html {
-  width: 100vw;
-  height: 100vh;
+    width: 100vw;
+    height: 100vh;
 }
 
 body {
-  background-color: var(--white);
-  width: var(--maxdimensions);
-  height: var(--autoDimension);
+    background-color: var(--white);
+    width: var(--maxdimensions);
+    height: var(--autoDimension);
 }
 
 header#header {
-  width: var(--maxdimensions);
-  height: 2rem;
+    width: var(--maxdimensions);
+    height: 2rem;
 }
 
 header#header > nav#headerNav {
-  width: var(--maxdimensions);
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* display: flex;
+    width: var(--maxdimensions);
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: center; */
 }
 
 .headerSpan {
-  width: var(--maxdimensions);
-  font-size: 75%;
-  text-align: center;
+    width: var(--maxdimensions);
+    font-size: 75%;
+    text-align: center;
 }
 
 nav#headerNav > div#personalPhotoContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/* nav#headerNav > div#personalPhotoContainer > img#personalPhoto {
+nav#headerNav > div.dropdown {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-} */
-
-nav#headerNav > div.dropdown {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    align-items: center;
 }
 
 nav#headerNav > div.dropdown > i#menuDrop {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 main#mainContainer {
-  width: var(--maxdimensions);
-  height: var(--maxdimensions);
-  display: flex;
-  flex-flow: column wrap;
+    width: var(--maxdimensions);
+    height: var(--maxdimensions);
+    display: flex;
+    flex-flow: column wrap;
 }
 /* SECTION - BRAND */
 .brand{
@@ -90,7 +83,9 @@ main#mainContainer {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    
 }
+
 .brandTxtContainer{
     width: var(--maxdimensions);
     display: flex;
@@ -98,9 +93,11 @@ main#mainContainer {
     justify-content: center;
     text-align: center;
 }
+
 .brandTitle, .brandTxt {
     width: 75%;
 }
+
 .brandBtns {
     margin: 0;
     padding: 0;
@@ -117,26 +114,31 @@ main#mainContainer {
     margin: 0;
     padding: 0;
 }
+
 .btn1:hover, .btn2:hover {
     transform: scale(1.2);
 }
+
 .yoSinBg{
     width: 90px;
 }
+
 /* SECTION - ABOUT ME */
 section.aboutMeContainer{
     width: var(--maxdimensions);
-    height: 5rem;
-    width: 100%;
+    height: auto;
 }
+
 div.headAboutMe {
     display: flex;
     flex-flow: row;
     align-items: center;
     margin-left: 5%;
+    margin-top: 1.2rem;
     width: 100%;
     height: 50%;
 }
+
 div.headAboutMe h3 {
     display: flex;
     flex-flow: column;
@@ -144,6 +146,11 @@ div.headAboutMe h3 {
     text-align: center;
     margin: 0;
     width: 30%;
+}
+
+div.aboutMeTxt {
+    width: 100%;
+    padding: 1rem;
 }
 
 div.star{
@@ -168,25 +175,30 @@ i.iStar2{
     transition: 1s ease-in;
 }
 
-
 .mixStars {
     animation: mixStars .5s ease-in-out;
 }
+
 .mixStarsAnimation {
     animation: mixStarsAnimation .5s ease-in-out;
 }
+
 .defuseStars {
     animation: defuseStars .5s ease-in-out;
 }
+
 .defuseStarsAnimation {
     animation: defuseStarsAnimation .5s ease-in-out;
 }
+
 .h3AnimationExtend {
     animation: dropsideExtend .5s ease-in-out;
 }
+
 .h3AnimationCollapse {
     animation: dropsideCollapse .5s ease-in-out;
 }
+
 @keyframes dropsideCollapse {
     0%{
         width: 30%;
@@ -224,6 +236,7 @@ i.iStar2{
     }
 
 }
+
 @keyframes dropsideExtend {
     0%{
         width: 0%;
@@ -297,6 +310,7 @@ i.iStar2{
         opacity: 0;
     }
 }
+
 @keyframes defuseStars {
     0%{
         opacity: 0;
@@ -367,4 +381,44 @@ i.iStar2{
     100% {
         transform: scale(1);
     }
+}
+
+/* SECTION - STUDIES */
+
+.formacionContainer {
+    width: var(--maxdimensions);
+    height: 20rem;
+}
+
+.headFormacion {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 1.2rem;
+    width: 100%;
+    height: 50%;
+}
+
+div.headFormacion h3 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    width: 30%;
+}
+
+.formacionInfo {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.lineTime {
+    width: .75%;
+    height: auto;
+    background-color: #FF9F1C;
+    border-radius: 5px;
 }
