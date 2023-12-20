@@ -124,12 +124,12 @@ main#mainContainer {
 }
 
 /* SECTION - ABOUT ME */
-section.aboutMeContainer{
+section#aboutMeContainer{
     width: var(--maxdimensions);
     height: auto;
 }
 
-div.headAboutMe {
+div#headAboutMe {
     display: flex;
     flex-flow: row;
     align-items: center;
@@ -139,7 +139,7 @@ div.headAboutMe {
     height: 50%;
 }
 
-div.headAboutMe h3 {
+div#headAboutMe h3 {
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -165,7 +165,6 @@ div.star:hover {
     cursor: pointer;
 }
 
-
 i.iStar1{
     color: #FF9F1C;
     transition: 1s ease-in;
@@ -174,270 +173,72 @@ i.iStar2{
     color: #FF9F1C;
     transition: 1s ease-in;
 }
-
-.mixStars {
-    animation: mixStars .5s ease-in-out;
-}
-
-.mixStarsAnimation {
-    animation: mixStarsAnimation .5s ease-in-out;
-}
-
-.defuseStars {
-    animation: defuseStars .5s ease-in-out;
-}
-
-.defuseStarsAnimation {
-    animation: defuseStarsAnimation .5s ease-in-out;
-}
-
-.h3AnimationExtend {
-    animation: dropsideExtend .5s ease-in-out;
-}
-
-.h3AnimationCollapse {
-    animation: dropsideCollapse .5s ease-in-out;
-}
-
-@keyframes dropsideCollapse {
-    0%{
-        width: 30%;
-        opacity: 0;
-    }
-    10%{
-        width: 29%;
-    }
-    20%{
-        width: 27%;
-    }
-    30%{
-        width: 24%;
-    }
-    40%{
-        width: 21%;
-    }
-    50%{
-        width: 18%;
-    }
-    60%{
-        width: 15%;
-    }
-    70%{
-        width: 12%;
-    }
-    80%{
-        width: 9%;
-    }
-    90%{
-        width: 3%;
-    }
-    100%{
-        width: 0%;
-    }
-
-}
-
-@keyframes dropsideExtend {
-    0%{
-        width: 0%;
-    }
-    10%{
-        width: 3%;
-    }
-    20%{
-        width: 9%;
-    }
-    30%{
-        width: 12%;
-    }
-    40%{
-        width: 15%;
-    }
-    50%{
-        width: 18%;
-    }
-    60%{
-        width: 21%;
-    }
-    70%{
-        width: 24%;
-    }
-    80%{
-        width: 27%;
-    }
-    90%{
-        width: 29%;
-    }
-    100%{
-        width: 30%;
-        opacity: 1;
-    }
-
-}
-
-@keyframes mixStars {
-    0%{
-        opacity: 1;
-    }
-    10%{
-        opacity: 0.9;
-    }
-    20%{
-        opacity: 0.8;
-    }
-    30%{
-        opacity: 0.7;
-    }
-    40%{
-        opacity: 0.6;
-    }
-    50%{
-        opacity: 0.5;
-    }
-    60%{
-        opacity: 0.4;
-    }
-    70%{
-        opacity: 0.3;
-    }
-    80%{
-        opacity: 0.2;
-    }
-    90%{
-        opacity: 0.1;
-    }
-    100%{
-        opacity: 0;
-    }
-}
-
-@keyframes defuseStars {
-    0%{
-        opacity: 0;
-    }
-    10%{
-        opacity: 0.1;
-    }
-    20%{
-        opacity: 0.2;
-    }
-    30%{
-        opacity: 0.3;
-    }
-    40%{
-        opacity: 0.4;
-    }
-    50%{
-        opacity: 0.5;
-    }
-    60%{
-        opacity: 0.6;
-    }
-    70%{
-        opacity: 0.7;
-    }
-    80%{
-        opacity: 0.8;
-    }
-    90%{
-        opacity: 0.9;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-@keyframes mixStarsAnimation {
-    0% {
-        transform: scale(1);
-    }
-    25% {
-        transform: scale(1.5);
-    }
-    50% {
-        transform: scale(1.25);
-    }
-    75% {
-        transform: scale(1.5);
-    }
-    100% {
-        transform: scale(1.25);
-    }
-}
-
-@keyframes defuseStarsAnimation {
-    0% {
-        transform: scale(1.25);
-    }
-    25% {
-        transform: scale(1.5);
-    }
-    50% {
-        transform: scale(1.25);
-    }
-    75% {
-        transform: scale(1.5);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
 /* SECTION - STUDIES */
 
-.formacionContainer {
+section#formacionContainer {
     width: var(--maxdimensions);
-    height: 20rem;
-}
-
-.headFormacion {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    margin-left: 5%;
-    margin-top: 1.2rem;
-    width: 100%;
-    height: 50%;
-}
-
-div.headFormacion h3 {
+    height: 30rem;
     display: flex;
     flex-flow: column;
     justify-content: center;
-    text-align: center;
-    margin: 0;
-    width: 30%;
+    align-items: center;
+    background-color: black;
+    color: white;
 }
 
-.formacionInfo {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    height: 100%;
-}
-
-.lineTime {
-    width: .75%;
-    height: 100%;
-    background-color: #FF9F1C;
-    border-radius: 5px;
+div#headFormacion {
+    width: var(--maxdimensions);
+    height: 25%;
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
-.timePoint{
-    width: 500%;
-    height: 5%;
-    background-color: #FF9F1C;
-    border-radius: 5px;
-}
-
-.lineTimeCards{
+div#headFormacionContent {
     width: var(--maxdimensions);
     height: var(--maxdimensions);
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h3#studiesTitle {
+    margin: 0;
+    padding: 0 1rem;
+    font-weight: 600;
+}
+
+div.formacionInfo{
+    width: var(--maxdimensions);
+    height: var(--maxdimensions);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
     align-items: center;
 }
+
+div.formacionTxt{
+    width: var(--maxdimensions);
+    height: 33.3%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+div.formacionDivisor{
+    width: 1%;
+    height: 75%;
+    background-color: #FF9F1C;
+}
+
+div.formacionTxt  div:nth-child(odd){
+   width: 100%;
+   text-align: center;
+}
+
+
