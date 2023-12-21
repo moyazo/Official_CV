@@ -21,6 +21,7 @@ body {
     background-color: var(--white);
     width: var(--maxdimensions);
     height: var(--autoDimension);
+    overflow-x: hidden;
 }
 
 header#header {
@@ -243,6 +244,11 @@ div.formacionTxt  div:nth-child(odd){
     width: 100%;
     text-align: center;
     padding: 1rem;
+    transition: .75s ease;
 }
 
+div.formacionTxt  div:nth-child(odd):hover{
+    transform: scale(1.25);
+    color: #FF9F1C;
+}
 
