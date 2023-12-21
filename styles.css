@@ -234,11 +234,15 @@ div.formacionDivisor{
     width: 1%;
     height: 75%;
     background-color: #FF9F1C;
+    -webkit-box-shadow: 0 0 32px 7.5px #ff9f1c;
+    -moz-box-shadow: 0 0 32px 7.5px #ff9f1c;
+    box-shadow: 0 0 32px 7.5px #ff9f1c;
 }
 
 div.formacionTxt  div:nth-child(odd){
-   width: 100%;
-   text-align: center;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
 }
 
 
