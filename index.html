@@ -11,414 +11,105 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <!-- JS FILES -->
     <script defer src="custom.js"></script>
     <script defer src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header id="header" class="principalDiv">
+    <header id="headerStart">
         <nav id="headerNav">
-            <div id="personalPhotoContainer">
-                <!-- <img id="personalPhoto" src="" alt="."> -->
-                <span class="headerSpan">Manuel Moya Vadillo</span>
-            </div>
-            <div class="dropdown">
-                <!-- Reemplaza el botón con el icono -->
-                <i id="menuDrop" class="bi bi-list" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
-                <div class="dropdown-menu" aria-labelledby="menuDrop">
-                    <a class="dropdown-item text-center dropOptn" href="#">Sobre mí</a>
-                    <a class="dropdown-item text-center dropOptn" href="#">Formación</a>
-                    <a class="dropdown-item text-center dropOptn" href="#">Skills</a>
-                    <a class="dropdown-item text-center dropOptn" href="#">Actualidad</a>
+            <div id="offCanvasContainer">
+                <button
+                    id="offCanvasBtn"
+                    class="btn"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#Id2"
+                    aria-controls="Id2"
+                >
+                    <i class='bx bx-menu'></i>
+                </button>
+                
+                <div
+                    class="offcanvas offcanvas-start"
+                    tabindex="-1"
+                    id="Id2"
+                    aria-labelledby="staticBackdropLabel"
+                >
+                        <!-- <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                        ></button> -->
+                    <div id="canvasBody" class="offcanvas-body">
+                        <div class="offCanvasItem">
+                            <div class="itemIcon">
+                                <i class='bx bxs-user'></i>
+                            </div>
+                            <div class="itemTextContainer">
+                                <pan class="itemText">About Me</pan>
+                            </div>
+                        </div>
+                        <div class="offCanvasItem">
+                            <div class="itemIcon">
+                                <i class='bx bxs-graduation'></i>
+                            </div>
+                            <div class="itemTextContainer">
+                                <pan class="itemText">Education</pan>
+                            </div>
+                        </div>
+                        <div class="offCanvasItem">
+                            <div class="itemIcon">
+                                <i class='bx bx-stats'></i>  
+                            </div>
+                            <div class="itemTextContainer">
+                                <pan class="itemText">Skills</pan>
+                            </div>
+                        </div>
+                        <div class="offCanvasItem">
+                            <div class="itemIcon">
+                                <i class='bx bxs-pin'></i>  
+                            </div>
+                            <div class="itemTextContainer">
+                                <pan class="itemText">Projects</pan>
+                            </div>
+                        </div>
+                        <div class="offCanvasItem">
+                            <div class="itemIcon">
+                                <i class='bx bxs-paper-plane'></i> 
+                            </div>
+                            <div class="itemTextContainer">
+                                <pan class="itemText">Experience</pan>
+                            </div>
+                        </div>
+                        <div class="offCanvasItem">
+                            <div class="itemIcon">
+                                <i class='bx bxs-id-card'></i>
+                            </div>
+                            <div class="itemTextContainer">
+                                <pan class="itemText">Contact</pan>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
+            </div>
+            <div id="nameHeaderContainer">
+                <h5 id="nameHeader">Manuel Moya Vadillo</h5>
+                <h6 id="spanNameHeader">Full Stack Developer</h6>
             </div>
         </nav>
     </header>
     <main id="mainContainer">
-        <div
-            class="card text-white"
-        >
-            <div class="card-body brand">
-                <div class="brandTxtContainer">
-                    <h4 class="card-title brandTitle">Manuel Moya Vadillo</h4>
-                    <p class="card-text brandTxt">Fullstack Developer</p>
-                    <div class="brandBtns">
-                        <button class="btn1">Contact Me</button>
-                        <button class="btn2">Hire Me</button>
-                    </div>
-                </div>
-                <img class="yoSinBg" src="./assets/yoSinBg.png" alt="">
-            </div>
-        </div>
         
-        <section id="aboutMeContainer">
-            <div id="headAboutMe">
-                <div id="starLeftAbout" class="star">
-                    <i class="bi bi-star-fill iStar1"></i>
-                </div>
-                <h3 id="aboutTitle">About me</h3>
-                <div id="starRightAbout" class="star">
-                    <i class="bi bi-star-fill iStar2"></i>
-                </div>
-            </div>
-            <div class="aboutMeTxt">
-                <p>
-                    Programador web fullstack que le encanta descubrir cosas nuevas de cada tecnología. En mi caso soy capaz de desarrollar en los frameworks de Laravel y React, que lo complemento con MySql, PostgreSql, MongoDB, GitHub, Docker, etc. 
-                    Capacidad de sobra para aprender varias cosas al mismo tiempo, al ser junior las ganas de desarrollarme en el entorno laboral son increibles por no hablar que soy fan de los viajes al extranjero, interactuar con personas nuevas y con cualquier cosa con la que pueda divertirme y aprender.
-                </p>
-            </div>
-        </section>
-        <section id="formacionContainer">
-            <div id="headFormacion">
-                <div id="headFormacionContent">
-                    <div id="starLeftAbout" class="star">
-                        <i class="bi bi-star-fill iStar1"></i>
-                    </div>
-                    <h3 id="studiesTitle">Studies</h3>
-                    <div id="starRightAbout" class="star">
-                        <i class="bi bi-star-fill iStar2"></i>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="formacionInfo">
-                <div id="formaciones1" class="formacionTxt">
-                    <div
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalDAWId"
-                    >
-                        Desarrollo aplicaciones web
-                    </div>
-                    <div class="formacionDivisor"></div>
-                    <div
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalDAMId"
-                    >
-                        Desarrollo aplicaciones multiplataforma
-                    </div>
-                </div>
-                <div id="formaciones2" class="formacionTxt">
-                    <div
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalTSUId"
-                    >
-                        Tecnico superior uiversitario
-                    </div>
-                    <div class="formacionDivisor"></div>
-                    <div
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalUCAMId"
-                    >
-                    Ingeniería Informática
-                </div>
-                </div>
-                <div id="formaciones3" class="formacionTxt">
-                    <div
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalBOOTId"
-                    >
-                        Bootcamp desarrollo web
-                    </div>
-                    <div class="formacionDivisor"></div>
-                    <div
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalBACHId"
-                    >
-                        Bachillerato ciencias de la salud
-                    </div>
-                </div>
-            </div>
-            <!-- MODALS -->
-            <div
-                class="modal fade"
-                id="modalDAWId"
-                tabindex="-1"
-                data-bs-backdrop="static"
-                data-bs-keyboard="false"
-                
-                role="dialog"
-                aria-labelledby="modalTitleId"
-                aria-hidden="true"
-            >
-                <div
-                    class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
-                    role="document"
-                >
-                    <div class="modal-content text-dark">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalTitleId">
-                                Desarrollo aplicaciones web
-                            </h5>
-                            <button
-                                type="button"
-                                class="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"
-                            ></button>
-                        </div>
-                        <div class="modal-body">Body</div>
-                        <div class="modal-footer">
-                            <button
-                                type="button"
-                                class="btn bg-warning"
-                                data-bs-dismiss="modal"
-                            >
-                                Close
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div
-                class="modal fade"
-                id="modalDAMId"
-                tabindex="-1"
-                data-bs-backdrop="static"
-                data-bs-keyboard="false"
-                
-                role="dialog"
-                aria-labelledby="modalTitleId"
-                aria-hidden="true"
-            >
-                <div
-                    class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
-                    role="document"
-                >
-                    <div class="modal-content text-dark">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalTitleId">
-                                Desarrollo aplicaciones multiplataforma
-                            </h5>
-                            <button
-                                type="button"
-                                class="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"
-                            ></button>
-                        </div>
-                        <div class="modal-body">Body</div>
-                        <div class="modal-footer">
-                            <button
-                                type="button"
-                                class="btn bg-warning"
-                                data-bs-dismiss="modal"
-                            >
-                                Close
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div
-                class="modal fade"
-                id="modalTSUId"
-                tabindex="-1"
-                data-bs-backdrop="static"
-                data-bs-keyboard="false"
-                
-                role="dialog"
-                aria-labelledby="modalTitleId"
-                aria-hidden="true"
-            >
-                <div
-                    class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
-                    role="document"
-                >
-                    <div class="modal-content text-dark">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalTitleId">
-                                Técnico superior universitario
-                            </h5>
-                            <button
-                                type="button"
-                                class="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"
-                            ></button>
-                        </div>
-                        <div class="modal-body">Body</div>
-                        <div class="modal-footer">
-                            <button
-                                type="button"
-                                class="btn bg-warning"
-                                data-bs-dismiss="modal"
-                            >
-                                Close
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div
-                class="modal fade"
-                id="modalUCAMId"
-                tabindex="-1"
-                data-bs-backdrop="static"
-                data-bs-keyboard="false"
-                
-                role="dialog"
-                aria-labelledby="modalTitleId"
-                aria-hidden="true"
-            >
-                <div
-                    class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
-                    role="document"
-                >
-                    <div class="modal-content text-dark">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalTitleId">
-                                Ingeniería Informática
-                            </h5>
-                            <button
-                                type="button"
-                                class="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"
-                            ></button>
-                        </div>
-                        <div class="modal-body">Body</div>
-                        <div class="modal-footer">
-                            <button
-                                type="button"
-                                class="btn bg-warning"
-                                data-bs-dismiss="modal"
-                            >
-                                Close
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div
-                class="modal fade"
-                id="modalBOOTId"
-                tabindex="-1"
-                data-bs-backdrop="static"
-                data-bs-keyboard="false"
-                
-                role="dialog"
-                aria-labelledby="modalTitleId"
-                aria-hidden="true"
-            >
-                <div
-                    class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
-                    role="document"
-                >
-                    <div class="modal-content text-dark">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalTitleId">
-                                Bootcamp desarrollo web
-                            </h5>
-                            <button
-                                type="button"
-                                class="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"
-                            ></button>
-                        </div>
-                        <div class="modal-body">Body</div>
-                        <div class="modal-footer">
-                            <button
-                                type="button"
-                                class="btn bg-warning"
-                                data-bs-dismiss="modal"
-                            >
-                                Close
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div
-                class="modal fade"
-                id="modalBACHId"
-                tabindex="-1"
-                data-bs-backdrop="static"
-                data-bs-keyboard="false"
-                
-                role="dialog"
-                aria-labelledby="modalTitleId"
-                aria-hidden="true"
-            >
-                <div
-                    class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
-                    role="document"
-                >
-                    <div class="modal-content text-dark">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalTitleId">
-                                Bachillerato ciencias de la salud
-                            </h5>
-                            <button
-                                type="button"
-                                class="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"
-                            ></button>
-                        </div>
-                        <div class="modal-body">Body</div>
-                        <div class="modal-footer">
-                            <button
-                                type="button"
-                                class="btn bg-warning"
-                                data-bs-dismiss="modal"
-                            >
-                                Close
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- <section>
-            <div>Formación</div>
-            <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, voluptatum.</article>
-        </section>
-        <section>
-            <div>Skills</div>
-            <article>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, impedit.</article>
-        </section>
-        <section>
-            <div>Actualidad</div>
-            <article>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, nam!</article>
-        </section> -->
     </main>
     <!-- <footer>
         <div>RRSS</div>
         <div>Copyright</div>
     </footer> -->
-    <script>
-        const myModalDAW = new bootstrap.Modal(
-            document.getElementById("modalDAWId"),
-            options,
-        );
-        const myModalDAM = new bootstrap.Modal(
-            document.getElementById("modalDAMId"),
-            options,
-        );
-        const myModalTSU = new bootstrap.Modal(
-            document.getElementById("modalTSUId"),
-            options,
-        );
-        const myModalUCAM = new bootstrap.Modal(
-            document.getElementById("modalUCAMId"),
-            options,
-        );
-        const myModalBOOT = new bootstrap.Modal(
-            document.getElementById("modalBOOTId"),
-            options,
-        );
-        const myModalBACH = new bootstrap.Modal(
-            document.getElementById("modalBACHId"),
-            options,
-        );
-    </script>
 </body>
 </html>
