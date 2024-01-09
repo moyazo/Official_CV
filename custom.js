@@ -13,4 +13,3 @@ navOptnsElement.forEach((optn) => {
         optn.classList.add("active");
     });
 });
-
