@@ -129,7 +129,7 @@ main#mainContainer {
 /* INTRO STYLES */
 
 section#introContainer {
-    background: url('/assets/altImage.jpg') center/cover no-repeat !important;
+    background: url('./assets/altImage.jpg') center/cover no-repeat !important;
     display: flex;
     height: 35rem;
     justify-content: center;
