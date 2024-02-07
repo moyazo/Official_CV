@@ -191,7 +191,7 @@ div#aboutCard{
     box-shadow: 0 0 2rem -.2rem var(--neutralColor2);
     display: flex;
     flex-flow: column;
-    height: 80%;
+    height: 100%;
     justify-content: space-around;
     opacity: 1;
     padding: 1rem 0rem;
