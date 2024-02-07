@@ -13,3 +13,8 @@ navOptnsElement.forEach((optn) => {
         optn.classList.add("active");
     });
 });
+
+const myModal = new bootstrap.Modal(
+    document.getElementById("modalId"),
+    options,
+);

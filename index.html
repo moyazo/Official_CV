@@ -289,10 +289,104 @@
             <p xmlns:cc="http://creativecommons.org/ns#" ><a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>
         </div>
         <div id="RRSS">
-            <div id="linkedIn"><img class="rrssImg" src="./assets/likedinIcon.png" alt=""></div>
-            <div id="github"><img class="rrssImg" src="./assets/githubIcon.png" alt=""></div>
-            <div id="gmail"><img class="rrssImg" src="./assets/gmailIcon.png" alt=""></div>
-            <div id="phone"><img class="rrssImg" src="./assets/phoneIcon.png" alt=""></div>
+            <div id="linkedIn"><a href="https://www.linkedin.com/in/manuel-moya-vadillo/" target="_blank" rel="noopener noreferrer"><img class="rrssImg" src="./assets/likedinIcon.png" alt=""></a></div>
+            <div id="github"><a href="https://github.com/moyazos" target="_blank" rel="noopener noreferrer"><img class="rrssImg" src="./assets/githubIcon.png" alt=""></a></div>
+            <div id="gmail">
+                <img
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalGmail"
+                    class="rrssImg" src="./assets/gmailIcon.png" alt=""
+                >
+                <div
+                    class="modal fade"
+                    id="modalGmail"
+                    tabindex="-1"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    
+                    role="dialog"
+                    aria-labelledby="modalTitleId"
+                    aria-hidden="true"
+                >
+                    <div
+                        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+                        role="document"
+                    >
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalTitleId">
+                                    My gmail
+                                </h5>
+                                <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                ></button>
+                            </div>
+                            <div class="modal-body">manuel.moyavadillo2@gmail.com</div>
+                            <div class="modal-footer">
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="phone">
+                <img
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalPhone"
+                    class="rrssImg" src="./assets/phoneIcon.png" alt=""
+                >
+                <div
+                    class="modal fade"
+                    id="modalPhone"
+                    tabindex="-1"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    
+                    role="dialog"
+                    aria-labelledby="modalTitleId"
+                    aria-hidden="true"
+                >
+                    <div
+                        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+                        role="document"
+                    >
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalTitleId">
+                                    My Phone
+                                </h5>
+                                <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                ></button>
+                            </div>
+                            <div class="modal-body">+34 644 42 83 71</div>
+                            <div class="modal-footer">
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
