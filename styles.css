@@ -25,6 +25,7 @@ body {
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+    background-color: red;
 }
 
 /* HEADER STYLES */
@@ -121,7 +122,7 @@ main#mainContainer {
     justify-content: center;
     width: 100%;
     position: relative;
-    top:14.35%
+    top:7%
 }
 
 /* INTRO STYLES */
@@ -479,7 +480,7 @@ div#RRSS {
     }
 
     main#mainContainer {
-        top: 11%
+        top: 6%
     }
 
     div#spare {
@@ -524,9 +525,6 @@ div#RRSS {
         box-shadow: 00 0px 7px 10px #cbf3f0;
     }
 
-    main#mainContainer {
-        top:16.35%
-    }
 
     section#introContainer {
         height: 45em;
@@ -543,7 +541,7 @@ div#RRSS {
     }
 
     main#mainContainer {
-        top:7.55%
+        top:5%
     }
 
     section#introContainer {
