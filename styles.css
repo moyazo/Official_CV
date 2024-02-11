@@ -531,7 +531,7 @@ div#RRSS {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
     header#headerStart { 
         height: 6.5rem;
     }
