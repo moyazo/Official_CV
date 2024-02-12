@@ -122,7 +122,7 @@ main#mainContainer {
     justify-content: center;
     width: 100%;
     position: relative;
-    top:7%
+    top:3.25%
 }
 
 /* INTRO STYLES */
@@ -185,17 +185,17 @@ div#aboutCard{
     box-shadow: 0 0 2rem -.2rem var(--neutralColor2);
     display: flex;
     flex-flow: column;
-    height: 90%;
-    justify-content: space-around;
+    height: 80%;
+    justify-content: space-evenly;
     opacity: 1;
-    padding: 1rem 0rem;
-    width: 85%;
+    width: 80%;
     z-index: 10;
 }
 
 div#aboutTitleContainer {
     text-align: center;
     width: 100%;
+    /* padding-bottom: 5em; */
 }
 
 div#aboutTextContainer{
@@ -479,10 +479,6 @@ div#RRSS {
         box-shadow: none;
     }
 
-    main#mainContainer {
-        top: 6%
-    }
-
     div#spare {
         width: .2%;
         background-color: var(--secondaryColor);
@@ -490,6 +486,15 @@ div#RRSS {
         -moz-box-shadow: 0 13.5px 16.5px 21px #cbf3f0;
         -webkit-box-shadow: 0 13.5px 16.5px 21px #cbf3f0;
         box-shadow: 00 0px 7px 10px #cbf3f0;
+    }
+    
+    div#aboutCard{
+        height: 60%;
+        width: 60%;
+    }
+    div#aboutTitleContainer {
+        text-align: center;
+        width: 100%;
     }
 }
 
@@ -540,11 +545,30 @@ div#RRSS {
         font-size: 1.8rem;
     }
 
-    main#mainContainer {
-        top:5%
-    }
-
     section#introContainer {
         height: 85em;
+    }
+    
+    div#aboutCard{
+        align-items: center;
+        background-color: var(--neutralColor);
+        box-shadow: 0 0 2rem -.2rem var(--neutralColor2);
+        display: flex;
+        flex-flow: column;
+        height: 60%;
+        justify-content: space-evenly;
+        opacity: 1;
+        width: 50%;
+        z-index: 10;
+    }
+    
+    div#aboutTitleContainer {
+        text-align: center;
+        width: 100%;
+        /* padding-bottom: 5em; */
+    }
+    
+    div#aboutTextContainer{
+        padding: 0rem 1rem;
     }
 }
