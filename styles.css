@@ -125,7 +125,7 @@ main#mainContainer {
     height: 500px;
     position: absolute;
     top: 10%;
-    background: url('./assets/altImage.png') no-repeat center center fixed !important;
+    background: url('./assets/altImage.png') no-repeat 43.5% center;
     background-size: cover;
 }
 
@@ -182,13 +182,13 @@ span.colored{
         font-size: .9rem;
     }
 
-    main#mainContainer {
-        height: calc(500px + 20%);
+    h2.intro {
+        font-size: .8rem;
     }
 }
 @media (min-width: 720px) {
     main#mainContainer {
-        height: calc(500px + 25%);
+        height: calc(500px + 10%);
     }
 
     h6#spanNameHeader {
@@ -196,7 +196,7 @@ span.colored{
         box-shadow: none;
     }
     
-    div#spare {
+    div.spare {
         display: block;
         color: transparent;
         width: .2%;
@@ -206,14 +206,43 @@ span.colored{
         -webkit-box-shadow: 0 13.5px 16.5px 21px #cbf3f0;
         box-shadow: 00 0px 7px 10px #cbf3f0;
     }
+
+    h5#nameHeader {
+        width: 50%;
+        font-size: 1rem;
+    }
+    
+    h6#spanNameHeader {
+        width: 40%;
+        font-size: 1rem;
+    }
+
+    h2.intro {
+        font-size: .9rem;
+    }
 }
 @media (min-width: 912px) {
     main#mainContainer {
-        height: calc(500px + 30%);
+        height: calc(500px + 12%);
     }
-    div#spare {
+
+    div.spare {
         width: .1%;
         height: 85%;
+    }
+
+    h5#nameHeader {
+        width: 50%;
+        font-size: 1.1rem;
+    }
+    
+    h6#spanNameHeader {
+        width: 40%;
+        font-size: 1.1rem;
+    }
+
+    h2.intro {
+        font-size: 1rem;
     }
 }
 
@@ -235,11 +264,15 @@ span.colored{
         width: 40%;
         font-size: 1.25rem;
     }
-    div#spare {
+
+    h2.intro {
+        font-size: 1.1rem;
+    }
+    div.spare {
         width: .1%;
         height: 110%;
     }
     main#mainContainer {
-        height: calc(500px + 35%);
+        height: calc(500px + 20%);
     }
 }
