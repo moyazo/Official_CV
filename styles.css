@@ -106,7 +106,7 @@ h5#nameHeader {
     margin: 0;
 }
 
-div#spare {
+div.spare {
     display: none;
 }
 
