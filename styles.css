@@ -106,6 +106,10 @@ h5#nameHeader {
     margin: 0;
 }
 
+div#spare {
+    display: none;
+}
+
 h6#spanNameHeader {
     width: 40%;
     font-size: .75rem;
@@ -193,6 +197,7 @@ span.colored{
     }
     
     div#spare {
+        display: block;
         color: transparent;
         width: .2%;
         background-color: var(--secondaryColor);
