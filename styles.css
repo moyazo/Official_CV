@@ -275,13 +275,83 @@ div.skill {
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    color: var(--neutralColor2);
+    text-shadow: 0px 0px 9px var(--principalColor);
 }
 
 img.skillImage {
     width: 50%;
 }
 
+/* EXPERIENCE STYLES */
 
+section#experienceContainer {
+    width: 100%;
+    height: 30em;
+    padding: 1em;
+    display: flex;
+    flex-flow: column;
+    justify-content:  space-around;
+    align-items: center;
+}
+
+div#experienceTitleContainer {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#experiences {
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5em;
+}
+
+div.experience {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+div.expImg {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.expRef {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.expRef > a {
+    text-decoration: none;
+    color: var(--principalColor);
+    text-shadow: 0px 0px 19px var(--neutralColor2);
+    font-weight: 600;
+}
+
+img.experienceImage {
+    width: 70px;
+}
 
 /* MEDIA QUERY STYLES */
 
@@ -346,6 +416,34 @@ img.skillImage {
     section#skillsContainer {
         width: 100%;
         height: 50em;
+    }
+
+    section#experienceContainer {
+        width: 100%;
+        height: 30em;
+    }
+
+    div#experienceTitleContainer {
+        width: 100%;
+        height: 20%;
+    }
+
+    div#experiences {
+        width: 0%;
+        grid-template-columns: .5fr .5fr;
+        grid-template-rows: 1fr;
+    }
+
+    div.experience {
+        flex-flow: column;
+    }
+
+    div.expImg {
+        width: 100%;
+    }
+    
+    div.expRef {
+        width: 100%;
     }
 }
 @media (min-width: 912px) {
