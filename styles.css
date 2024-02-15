@@ -213,6 +213,10 @@ div#studiesTitleContainer {
     align-items: center;
 }
 
+div#studiesTitleContainer h3 {
+    color: var(--neutralColor);
+}
+
 div#studies {
     width: 100%;
     height: 100%;
@@ -233,6 +237,48 @@ div.study {
     background-color: var(--principalColor);
     box-shadow: 0 0 26px -12.5px #ffbf69;
     border-radius: 10px;
+}
+
+/* SKILLS STYLES */
+
+section#skillsContainer {
+    width: 100%;
+    height: 40em;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#skillsTitleContainer {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#skills {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+div.skill { 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img.skillImage {
+    width: 50%;
 }
 
 
@@ -296,6 +342,11 @@ div.study {
     h2.intro {
         font-size: .9rem;
     }
+
+    section#skillsContainer {
+        width: 100%;
+        height: 50em;
+    }
 }
 @media (min-width: 912px) {
     button#offCanvasBtn {
@@ -340,9 +391,15 @@ div.study {
     div.study:hover {
         transform: scale(1.05);
         cursor: pointer;
-    }    
+    }  
+    
+    section#skillsContainer {
+        height: 60em;
+    }
+    img.skillImage {
+        width: 40%;
+    }
 }
-
 @media (min-width: 1000px) {
     button#offCanvasBtn {
         color: var(--principalColor);
@@ -381,5 +438,13 @@ div.study {
 
     section#aboutContainer {
         height: 30em;
+    }
+
+    section#skillsContainer {
+        height: 80em;
+    }
+
+    img.skillImage {
+        width: 35%;
     }
 }
